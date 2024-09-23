@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Como Ajudar - Prato Cheio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="icon" href="img/logo.png">
+
+    <!--FONTES-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <input type="checkbox" aria-label="Close menu" role="button" id="close-menu" class="close-menu">
+        <label for="close-menu" title="close-menu" class="close-menu-label"></label>
+        <nav class="menu">
+            <div class="img-logo">
+                <a href="https://dev-gabriell.github.io/ongPrincipal/"><img src="img/Logotipo.png" alt=""></a>
+            </div>
+            <div class="elementos-nav">
+                <ul onclick="getElementById('close-menu').checked = false">
+                    <li><a href="#qm">Quem Somos</a></li>
+                    <li><a href="#oq">O que Fazemos</a></li>
+                    <li><a href="#cb">Cesta Básica</a></li>
+                    <li><a href="http://127.0.0.1:5501/index.html">Doação</a></li>
+                    <li><a href="https://dev-gabriell.github.io/contatoOng/">Contato</a></li>
+                </ul>
+            </div>
+            <button class="click-one"><a class="nome" href="">Cadastrar</a></button>
+        </nav>
+        <div class="espaco-menu"></div>
+
+        <div class="content">
+            <header class="txtcont"> <h1>#DOAÇÃO</h1></header>
+            <div class="cont">
+            <div class="pix hidden">
+                <header>
+                    <h1>Doe alimentos:</h1>
+                </header>
+                <form action="">
+                    <div class="formulario">
+                        <div class="contents">
+
+                            <div class="nomes">
+                                <input type="text" id="nome" name="nome" placeholder="Nome" maxlength="20">
+                            </div>
+
+                            <div class="column">
+                                <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome"
+                                    maxlength="20">
+                            </div>
+                        </div>
+                        <div class="contents">
+                            <input type="email" id="email" name="email" placeholder="Email">
+                        </div>
+                        <div class="textos">
+                            <div class="checks">
+                                <div class="alimentos">
+                                    <label>
+                                        <input type="checkbox">
+                                        <p>Arroz</p>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox">
+                                        <p>Feijão</p>
+                                    </label>
+
+                                    <label>
+                                        <input type="checkbox">
+                                        <p>Açúcar</p>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox">
+                                        <p>Sal</p>
+                                    </label>
+
+                                    <label>
+                                        <input type="checkbox">
+                                        <p>Macarrão</p>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox">
+                                        <p>Farinha</p>
+                                    </label>
+
+                                    <label>
+                                        <input type="checkbox">
+                                        <p>Óleo de soja</p>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox">
+                                        <p>Café em pó</p>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox">
+                                        <p>Leite em pó</p>
+                                    </label>
+                                </div>
+
+                                <div class="alimentos2">
+                                    <label>
+                                        <input type="checkbox">
+                                        <p>Fubá</p>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox">
+                                        <p>Biscoitos</p>
+                                    </label>
+
+                                    <label>
+                                        <input type="checkbox">
+                                        <p>Molho</p>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox">
+                                        <p>Sardinha</p>
+                                    </label>
+
+                                    <label>
+                                        <input type="checkbox">
+                                        <p>Sabonete</p>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox">
+                                        <p>Creme dental</p>
+                                    </label>
+
+                                    <label>
+                                        <input type="checkbox">
+                                        <p>Vinagre</p>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox">
+                                        <p>Extrato</p>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox">
+                                        <p>Achocolatado</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <input type="submit" name="enviar" id="enviar" value="Enviar">
+                        </div>
+                    </div>
+            </div>
+        </div>
+            </form>
+
+            <div class="cont cont2">
+            <div class="pix hidden2">
+
+                <head>
+                    <h1>DOAÇÃO VIA PIX</h1>
+                </head>
+                <p>É possível ajudar a Prato Cheio através do PIX, lendo o QR Code abaixo pelo seu aplicativo de
+                    pagamento:</p>
+                <img src="./img/qr-pix.jpg" alt="">
+                <p>Ou utilizando a CHAVE PIX abaixo:</p>
+                <h3>CNPJ 04.490.998/0001-00</h3>
+                <h4>Dados Bancários:</h4>
+                <p>Depósito para: Associação Prato Cheio</p>
+                <p>CNPJ 04.490.998/0001-00</p>
+                <p>Banco Itaú AG: 0445</p>
+                <p>C/C: 20291-4</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+        <hr class="hr">
+        <div class="content content2">
+            <div class="pix val hidden">
+
+                <head>
+                    <h1>NOTA FISCAL PAULISTA</h1>
+                </head>
+                <h4 class="click">É possível doar sua Nota Fiscal Paulista para a Prato Cheio de forma automática, em
+                    menos de 5 minutos!</h4>
+                <p>Basta acessar <a href="https://www.nfp.fazenda.sp.gov.br/">https://www.nfp.fazenda.sp.gov.br/</a>, e
+                    seguir os passos abaixo:</p>
+                <div class="lista">
+                    <ol>
+                        <li>Faça Login</li>
+                        <li>No menu, acesse <strong>[Entidades] [Doação de cupons com CPF]</strong>.</li>
+                        <li>Busque nossa entidade por <strong>ASSOCIAÇÃO PRATO CHEIO</strong> ou por nosso <strong>CNPJ
+                                04.490.998/0001-00</strong>.</li>
+                        <li>Finalize o processo no botão de confirmação.</li>
+                    </ol>
+                </div>
+                <h5>Pronto, suas Notas Fiscais serão destinadas automaticamente para a Prato Cheio!</h5>
+                <p class="atencao">Atenção: Para efetivar a sua doação, é necessário ter feito pelo menos um resgate dos
+                    créditos da Nota Paulista na sua conta. Basta acessar [Conta Corrente] e [Utilizar Créditos]</p>
+            </div>
+
+            <div class="pix val hidden2">
+
+                <head>
+                    <h1>PARCERIAS EMPRESARIAS</h1>
+                </head>
+                <h4>A Associação Prato Cheio realiza parcerias com empresas para a realização de:</h4>
+                <div class="lista2">
+                    <ul>
+                        <li>Oficinas culinárias</li>
+                        <li>Palestras</li>
+                        <li>Projetos</li>
+                        <li>Eventos</li>
+                    </ul>
+                </div>
+                <h6>Contrapartidas para a sua Empresa:</h6>
+                <div class="lista2">
+                    <ul>
+                        <li>Exposição do logotipo da empresa no site e redes sociais da Prato Cheio</li>
+                        <li>Associação da marca junto aos relatórios de atividades da Prato Cheio</li>
+                        <li>Direito de uso do Selo Prato Cheio em materiais institucionais</li>
+                        <li>Recibo de doação para abatimento de até 2% do Imposto de Renda para empresas com Lucro Real
+                            (Lei nº 9.790/99)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="hr">
+        <div class="content content3">
+            <div class="pix pix3 hidden">
+
+                <head>
+                    <h1>Doação via cartão de crédito e boleto bancário</h1>
+                </head>
+                <h4>É possível doar para a Prato Cheio através de boleto bancário e também via cartão de crédito:</h4>
+                <h4 class="doacao">Doação Recorrente – Mensal</h4>
+
+                <!--10 REAIS-->
+                <a href="https://pagseguro.uol.com.br/checkout/v2/pre-approvals/nc/sender-identification.jhtml?t=8d1bccef27a7b47408eb8e34ccd7649a&e=true"
+                    target="_blank">
+                    <div class="credito">
+                        <p>R$ 10,00</p>
+                        <img src="./img/pagbank.png" alt="">
+                    </div>
+                </a>
+
+                <!--30 REAIS-->
+                <a href="https://pagseguro.uol.com.br/checkout/v2/pre-approvals/nc/sender-identification.jhtml?t=8d1bccef27a7b47420acfa50dbc6f9f0&e=true"
+                    target="_blank">
+                    <div class="credito">
+                        <p>R$ 30,00</p>
+                        <img src="./img/pagbank.png" alt="">
+                    </div>
+                </a>
+
+                <!--50 REAIS-->
+                <a href="https://pagseguro.uol.com.br/checkout/v2/pre-approvals/nc/sender-identification.jhtml?t=8d1bccef27a7b474eb145c0c782a358d&e=true"
+                    target="_blank">
+                    <div class="credito">
+                        <p>R$ 50,00</p>
+                        <img src="/img/pagbank.png" alt="">
+                    </div>
+                </a>
+
+                <!--100 REAIS-->
+                <a href="https://pagseguro.uol.com.br/checkout/v2/pre-approvals/nc/sender-identification.jhtml?t=8d1bccef27a7b474ae1a18f18557c709&e=true"
+                    target="_blank">
+                    <div class="credito">
+                        <p>R$ 100,00</p>
+                        <img src="./img/pagbank.png" alt="">
+                    </div>
+                </a>
+
+                <h4>Doação Pontual</h4>
+                <a href="https://pagseguro.uol.com.br/checkout/nc/nl/donation/sender-identification.jhtml?t=c9ea2c6e99c89f87d86d3279dce127490d68e234217adb34ae952bf2c34439f1&e=true#rmcl"
+                    target="_blank">
+                    <div class="pagdoe">
+                        <img src="./img/doar.png" alt="">
+                    </div>
+                </a>
+            </div>
+
+            <div class="pix pix4 hidden2">
+                <div class="conteudo1">
+                    <header>
+                        <h1>DOAÇÕES INTERNACIONAIS</h1>
+                    </header>
+                    <p>A Prato Cheio é afiliada à <strong>CAF AMERICA</strong>, para <a
+                            href="https://cafa.iphiview.com/cafa/Organizations/OrganizationView/tabid/437/dispatch/byorganization_id$32518_hash$d8ef303dddc9109e831186b9d462f8c8471505f0/Default.aspx"
+                            target="_blank"> doações internacionais, clique aqui!</a></p>
+
+                    <img src="./img/caf.png" alt="">
+                </div>
+                <div class="conteudo1">
+                    <header>
+                        <h1>VOLUNTARIADO</h1>
+                    </header>
+                    <h5>Você pode contribuir também com atividades diversas:</h5>
+                    <ul>
+                        <li>Apoio na criação de conteúdo e na divulgação as pautas da Prato Cheio</li>
+                        <li>Organização de campanhas</li>
+                        <li>Prospecção de empresas e outros órgãos para parcerias</li>
+                        <li>Prestação de serviços diversos.</li>
+                    </ul>
+                    <p><a href="">Converse</a> com a gente!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="rodape">
+            <div class="foot3">
+                <h3>Associação Prato Cheio:</h3>
+                <div class="mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.3478346126885!2d-46.6599297!3d-23.5559478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5832be6296f7%3A0x1fce1057b21fc129!2sR.%20Lu%C3%ADs%20Coelho%2C%20308%20-%20sala%2025%20-%20Consola%C3%A7%C3%A3o%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001309-902!5e0!3m2!1spt-BR!2sbr!4v1726694028395!5m2!1spt-BR!2sbr"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="contatos">
+                    <p class="tel"><strong>Telefone</strong>: (11) 97480-2894</p>
+                    <p class="email"><strong>E-mail</strong>:<span>info@pratocheio.org.br</span></p>
+                    <p class="agencia"><a href="https://agencia4b.com.br/" target="_blank">agência 4b</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

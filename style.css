@@ -1,0 +1,581 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Animação*/
+
+.hidden{
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 0.3s;
+    transform: translateX(-30%);
+}
+
+.animacao{
+    opacity: 1;
+    filter: blur(0px);
+    transition: all 0.3s;
+    transform: translateX(0%);
+}
+
+.hidden2{
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 0.3s;
+    transform: translateX(30%);
+}
+
+.animacao2{
+    opacity: 1;
+    filter: blur(0px);
+    transition: all 0.3s;
+    transform: translateX(0%);
+}
+
+a{
+    text-decoration: none;
+    transition: 0.5s all;
+    color: #d874e6;
+
+}
+a:hover{
+    color: #c58ceb;
+}
+.close-menu{
+    display: none;
+ }
+ .espaco-menu{
+    width: 100%;
+    height: 80px;
+    background: #c9c8c8;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #d1d1d1;
+    padding: 10px;
+    border-bottom: 2px solid #ffffff;
+    box-shadow: 0 0 10px #000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+.menu ul{
+    display: flex;
+    margin: 0 60px 0 10px;
+}
+.menu ul li{
+    display: flex;
+    margin: 10px 20px;
+    font-family: "Bebas Neue", sans-serif;
+    cursor: pointer;
+    font-weight: 100;
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    transition: 0.5s all;
+    text-align: center;
+}
+.menu ul li:hover{
+    background: rgb(119, 119, 119);
+}
+.menu a{
+    display: flex;
+    color: #000;
+}
+.menu ul li:hover a{
+    color: #cfcfcf;
+}
+.img-logo img{
+    width: 250px;
+    height: auto;
+}
+.click-one{
+    position: relative;
+    width: 130px;
+    height: 40px;
+    border-radius: 17px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    margin-right: 50px;
+    background-color: rgb(19, 19, 19);
+    color: #fff;
+    overflow: hidden;
+}
+.click-one::before{
+    content: "";
+    position: absolute;
+    right: -30px;
+    width: 200px;
+    height: 20px;
+    background: linear-gradient(to left,#3de00b, #c2ffb3);
+    animation: animete 3s linear infinite;
+}
+.click-one::after{
+    content: "";
+    position: absolute;
+    background-color: rgb(19, 19, 19);
+    inset: 3.6px;
+    border-radius: 16px;
+    transition: 0.5s all;
+}
+
+.click-one:hover::after{
+    background: #fff;
+}
+@keyframes animete {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.click-one a{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 700;
+    z-index: 1;
+}
+.click-one:hover a{
+    color: #000;
+}
+
+/*CONTENT PRINCIPAL*/   
+.txtcont{
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    font-size: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 5px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 0 10px #1b8d05;
+}
+.cont{
+    margin-top: 70px;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(./img/ft-prato.png);
+    background-size: cover;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+}
+.form1 {
+    width: 600px;
+    height: 800px;
+    background: rgba(94, 110, 89, 0.404);
+    margin: 20px;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 10px #000;
+}
+.form1 h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 0 0 10px #000000;
+    color: #fff;
+}
+
+/*INPUTS*/
+.formulario{
+    padding: 20px 60px;
+}
+.formulario h2{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+.contents{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    margin-top: 40px;
+  }
+  
+  .nomes {
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-bottom: 25px;
+  }
+  
+  .nomes:last-child {
+    margin-right: 0;
+  }
+  #email{
+    margin-bottom: 35px;
+  }
+  input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 7px;
+    border: none;
+    font-size: 14px;
+    margin-top: 3px;
+    box-sizing: border-box;
+  }
+  input:focus{
+    outline: none;
+    box-shadow: 0 0 10px #000000;
+  }
+  textarea:focus{
+    outline: 1px solid #000000;
+  }
+  input::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #505050;
+    display: block;
+    margin: auto;
+    margin-bottom: 5px;
+  }
+  .textos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+#txtArea{
+    font-size: 17px;
+    width: 46ch;
+    height: 200px;
+    padding: 10px;
+    resize: none;
+    border-radius: 15px;
+    border: none;
+    margin-bottom: 20px;
+}
+#txtArea::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#enviar{
+    font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 3px;
+    width: 250px;
+    height: 50px;
+    cursor: pointer;
+    background: rgb(71, 179, 94);
+    border: 3px solid rgb(71, 179, 94);
+    transition: 0.5s all;
+    margin-top: 130px;
+    padding: 10px;
+}
+#enviar:hover{
+    background: #fff;
+    border: 3px solid rgb(71, 179, 94);
+    box-shadow: 0 0 10px rgb(71, 179, 94);
+}
+
+.checks{
+    display: flex;
+
+}
+
+.alimentos, .alimentos2{
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    height: 200px;
+    margin: 10px;
+}
+.alimentos label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-bottom: 4px;
+
+}
+.alimentos2 label {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 70px;
+    margin-bottom: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.alimentos input{
+    width: 30px;
+    height: 17px;
+    outline: none;
+    border: none;
+}
+.alimentos2 input{
+    width: 30px;
+    height: 17px;
+    outline: none;
+    border: none;
+}
+
+.alimentos p {
+    margin: 0 0 0 6px;
+}
+.alimentos2 p {
+    margin: 0 0 0 6px;
+}
+
+/*PIX*/
+.pix h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 0 10px #000000;
+    color: #fff;
+}
+.pix p {
+    text-align: center;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    text-shadow: 0 0 15px #000;
+
+}
+.pix h3, h4{
+    text-align: center;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    font-size: 23px;
+    text-shadow: 0 0 5px #000;
+}
+.pix h4{
+    margin-top: 50px;
+    font-size: 20px;
+}
+.pix{
+    display: flex;
+    flex-direction: column;
+    width: 580px;
+    height: 760px;
+    padding: 20px;
+    background: rgba(94, 110, 89, 0.404);
+    margin: 20px;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 10px #000;  
+}
+.pix img{
+    margin:50px auto 10px;
+}
+.pix img{
+    width: 50%;
+    height: auto;
+}
+
+/*CONTENT 2*/   
+.content2{
+    background-image: url(./img/ft-prato2.jpg);
+}
+.val{
+    background: rgba(145, 145, 145, 0.404);
+
+}
+.click{
+    margin-bottom: 30px;
+}
+.pix ol li{
+    color: #fff;
+    margin: 10px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0 0 5px #000; 
+
+}
+.lista{
+    margin: 60px auto;
+    padding: 30px;
+}
+.pix h5{
+    text-align: center;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-shadow: 0 0 5px #000; 
+    margin-bottom: 60px;
+}
+.pix h6{
+    text-align: center;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-shadow: 0 0 5px #000;
+}
+.atencao{
+    font-size: 15px;
+}
+.hr{
+    padding: 10px;
+    background: #fff;
+}
+.lista2{
+    margin: 20px ;
+    padding: 20px; 
+}
+.pix ul li{
+    color: #fff;
+    margin: 10px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0 0 10px #000;
+}
+
+/*CONTENT 3*/   
+.content3{
+    background-image: url(./img/img-principal.png);
+}
+.pix3 a {
+    width: 100%;
+}
+.pix a:hover{
+    color: #ebc3fd;
+
+}
+.pix3 h4{
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.credito{
+    display: flex;
+    width: 190px;
+    padding: 10px;
+    height: 70px;
+    background: rgba(221, 218, 218, 0.74);
+    margin: 10px auto;
+    border-radius: 13px;
+    transition: 0.3s all;
+}
+.credito p {
+    color: #000;
+    font-weight: 700;
+    margin: auto 0;
+}
+.credito img{
+    width: 50%;
+    height: auto;
+    margin: auto;
+}
+.credito:hover{
+    box-shadow: 0 0 10px #3de00b;
+}
+.pagdoe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: 100px;
+}
+.pagdoe img{
+    margin: 0;
+    width: 20%;
+    height: auto;
+}
+
+
+/*BOX FINAL*/  
+.pix4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.conteudo1{
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    height: 350px;
+    padding: 13px;
+    background: rgba(104, 117, 94, 0.815);
+    margin: 10px 0;
+}
+.conteudo1 a{
+    color: #d874e6;
+    text-decoration: underline;
+}
+.conteudo1 img{
+    width: 40%;
+    height: auto;
+}
+
+.conteudo1 h5{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+
+/*FOOTER*/
+.rodape{
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    padding: 50px;
+    background: rgb(204, 204, 204);
+}
+.foot3{
+    width: 80%;
+    height: 200px;
+}
+
+.mapa iframe{
+    width: 100%;
+    height: 250px;
+    box-shadow: 0 0 3px #000;
+}
+.foot3 h3{
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-family: "Bebas Neue", sans-serif;
+    margin: 10px 0;
+}
+.contatos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.tel strong{
+    font-weight: 500;
+}
+.email strong{
+    font-weight: 500;
+}
+.foot3 p {
+    font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;  
+    letter-spacing: 2px;
+    margin: 10px 0;
+}
+p span{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5px;
+}
+.agencia a{
+    color: #000;
+    text-decoration: underline;
+}
